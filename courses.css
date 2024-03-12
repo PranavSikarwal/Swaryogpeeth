@@ -140,6 +140,24 @@ a{
     text-decoration: none;
     color: white;
 }
+
+.main{
+    margin-left: 20rem;
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: row;
+   
+}
+input{
+    border: none;
+    border-bottom: 0.1rem solid gray;
+    margin-top: 3rem;
+    padding-bottom: 1rem;
+}
+textarea{
+    border: none;
+    border-bottom: 0.1rem solid gray;
+}
 @media (max-width: 1290px) {
 .foot1{
     display: none;
