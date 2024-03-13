@@ -161,23 +161,27 @@ textarea{
 .right {
     display: flex;
     flex-direction: column;
+    border: 0.1rem solid gray;
+    margin-left: 2rem;
+    padding: 2rem;
 }
 
 .course {
     display: flex;
     flex-direction: row;
-    /* border: 0.1rem solid gray; */
-    margin-bottom: 1rem; /* Add some spacing between courses */
+ 
+    margin-bottom: 1rem;
 }
 
 .course_img {
-    flex: 0 0 auto; /* Set the image container to a fixed width */
+    flex: 0 0 auto; 
 }
 
 .course_details {
     display: flex;
     flex-direction: column;
-    margin-left: 1rem; /* Add some space between image and details */
+    margin-left: 1rem;
+    color: rgb(65, 64, 64);
 }
 .course_low{
     display: flex;
@@ -231,5 +235,19 @@ textarea{
     .logo{
         margin-left: 10rem;
     }
-    
+    .left{
+        display: none;
+    }
+    .main{
+        margin-left: 0;
+    }
+    .course{
+        flex-direction: column;
+    }
+    .course_details{
+        text-align: center;
+    }
+    .yoga_img{
+        margin-bottom: 2rem;
+    }
 }
