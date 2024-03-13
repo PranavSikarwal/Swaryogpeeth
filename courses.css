@@ -158,6 +158,31 @@ textarea{
     border: none;
     border-bottom: 0.1rem solid gray;
 }
+.right {
+    display: flex;
+    flex-direction: column;
+}
+
+.course {
+    display: flex;
+    flex-direction: row;
+    /* border: 0.1rem solid gray; */
+    margin-bottom: 1rem; /* Add some spacing between courses */
+}
+
+.course_img {
+    flex: 0 0 auto; /* Set the image container to a fixed width */
+}
+
+.course_details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem; /* Add some space between image and details */
+}
+.course_low{
+    display: flex;
+    flex-direction: row;
+}
 @media (max-width: 1290px) {
 .foot1{
     display: none;
