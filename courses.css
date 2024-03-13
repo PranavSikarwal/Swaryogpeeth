@@ -143,7 +143,7 @@ a{
 
 .main{
     margin-left: 20rem;
-    margin-top: 7rem;
+    margin-top: 5rem;
     display: flex;
     flex-direction: row;
    
@@ -158,30 +158,33 @@ textarea{
     border: none;
     border-bottom: 0.1rem solid gray;
 }
-.right {
+.left{
+    margin-top: 2rem;
+}
+.course {
     display: flex;
     flex-direction: column;
-    border: 0.1rem solid gray;
+    border: 0.1rem solid rgb(202, 198, 198);
     margin-left: 2rem;
-    padding: 2rem;
+    /* padding: 2rem; */
+    height: 20.1rem;
 }
 
 .course {
     display: flex;
     flex-direction: row;
- 
-    margin-bottom: 1rem;
+    margin-top: 2rem;
+    /* margin-bottom: 1rem; */
 }
 
-.course_img {
-    flex: 0 0 auto; 
-}
 
 .course_details {
     display: flex;
     flex-direction: column;
     margin-left: 1rem;
+    margin-top: 1rem;
     color: rgb(65, 64, 64);
+    padding-right: 2rem;
 }
 .course_low{
     display: flex;
@@ -227,6 +230,9 @@ textarea{
         text-align: center;
 
     }
+    .main{
+        margin-left: 0.5rem;
+    }
 }
 @media (max-width:768px) {
     .foot2{
@@ -249,5 +255,8 @@ textarea{
     }
     .yoga_img{
         margin-bottom: 2rem;
+    }
+    .course{
+        height: 50rem;
     }
 }
