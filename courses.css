@@ -151,6 +151,7 @@ a{
     margin-top: 5rem;
     display: flex;
     flex-direction: row;
+    position: relative;
    
 }
 input{
@@ -164,8 +165,10 @@ textarea{
     border-bottom: 0.1rem solid gray;
 }
 .left{
-    
     margin-top: 2rem;
+    height: max-content;
+    position: sticky;
+    top: 10rem;
 }
 .course {
     display: flex;
@@ -195,6 +198,19 @@ textarea{
 .course_low{
     display: flex;
     flex-direction: row;
+}
+span{
+    color: black;
+    font-size: 4rem;
+}
+.rate{
+margin-left: 24rem;
+margin-bottom: 2.5rem;
+}
+.price{
+    color: black;
+    text-align: left;
+    margin-left: 14rem;
 }
 @media (max-width: 1290px) {
 .foot1{
@@ -267,6 +283,15 @@ textarea{
         margin-right: 0.1rem;
         
     }
-   
-  
+   .rate{
+    margin-left: 12rem;
+    margin-bottom: 0;
+   }
+   .price{
+    display: flex;
+    flex-direction: row;
+   }
+span{
+    font-size: 2rem;
 }
+   }
