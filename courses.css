@@ -22,7 +22,7 @@
     font-size: 1.7rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     border-bottom: 0.1rem solid rgb(203, 193, 193);
-    width: 100%;
+    /* width: 100%; */
     background-color: white;
 }
 
@@ -84,7 +84,7 @@ select{
      margin-top: 1.2rem;
 }
 .footer_up{
-    width: 100%;
+    /* width: 100%; */
     height: 50rem;
     display: flex;
     flex-direction: row;
@@ -147,6 +147,7 @@ a{
 }
 
 .main{
+    max-width: max-content;
     margin-left: 20rem;
     margin-top: 5rem;
     display: flex;
@@ -176,7 +177,7 @@ textarea{
     border: 0.1rem solid rgb(202, 198, 198);
     margin-left: 2rem;
     /* padding: 2rem; */
-    height: 20.1rem;
+    height:max-content;
 }
 
 .course {
@@ -192,7 +193,7 @@ textarea{
     flex-direction: column;
     margin-left: 1rem;
     margin-top: 1rem;
-    color: rgb(65, 64, 64);
+    color: rgb(82, 80, 80);
     padding-right: 2rem;
 }
 .course_low{
@@ -201,7 +202,7 @@ textarea{
 }
 span{
     color: black;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 .rate{
 margin-left: 24rem;
@@ -209,8 +210,10 @@ margin-bottom: 2.5rem;
 }
 .price{
     color: black;
-    text-align: left;
-    margin-left: 14rem;
+    text-align: right;
+    position: absolute;
+    /* margin-left: 14rem; */
+    right: 0;
 }
 @media (max-width: 1290px) {
 .foot1{
@@ -225,6 +228,9 @@ margin-bottom: 2.5rem;
     }
     .header_right{
         display: none;
+    }
+    .course{
+        margin-left: 20rem;
     }
     .foot2{
         margin: 0;
@@ -259,7 +265,7 @@ margin-bottom: 2.5rem;
         display: none;
     }
 }
-@media (max-width:768px) {
+@media (max-width:1000px) {
     .foot2{
         margin-left: 11rem;
     }
@@ -274,11 +280,9 @@ margin-bottom: 2.5rem;
     .course_details{
         text-align: center;
     }
-    .yoga_img{
-        margin-bottom: 2rem;
-    }
+  
     .course{
-        height: 44rem;
+        /* height: 44rem; */
         margin-left: 0.1rem;
         margin-right: 0.1rem;
         
