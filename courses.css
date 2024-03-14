@@ -239,6 +239,9 @@ textarea{
     .main{
         margin: 0.1rem;
     }
+    .left{
+        display: none;
+    }
 }
 @media (max-width:768px) {
     .foot2{
@@ -247,9 +250,7 @@ textarea{
     .logo{
         margin-left: 10rem;
     }
-    .left{
-        display: none;
-    }
+   
    
     .course{
         flex-direction: column;
@@ -261,9 +262,10 @@ textarea{
         margin-bottom: 2rem;
     }
     .course{
-        height: 50rem;
+        height: 44rem;
         margin-left: 0.1rem;
         margin-right: 0.1rem;
+        
     }
    
   
