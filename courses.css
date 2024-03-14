@@ -250,9 +250,7 @@ textarea{
     .left{
         display: none;
     }
-    .main{
-        /* margin-left: 0; */
-    }
+   
     .course{
         flex-direction: column;
     }
@@ -264,5 +262,8 @@ textarea{
     }
     .course{
         height: 50rem;
+        margin: 0.1rem;
     }
+   
+  
 }
