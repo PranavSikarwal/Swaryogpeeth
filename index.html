@@ -2,12 +2,22 @@
 <html lang="en">
 <head>
     <link rel="icon" type="image/x-icon" href="/images/title.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <link rel="stylesheet" href="index.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Swar Yog Peeth - Yoga Teacher Training In Rishikesh</title>
 </head>
+<script>document.addEventListener("DOMContentLoaded", function() {
+    const toggleButton = document.getElementById("toggleButton");
+    const headerRight = document.querySelector(".Header_btn");
+
+    toggleButton.addEventListener("click", function() {
+        headerRight.classList.toggle("show");
+    });
+});
+</script>
 <body>
     <nav>
         <div class="logo"> <img src="images/LOGO.png" alt="LOGO" style="height: 6.5rem;"></div>
@@ -31,6 +41,15 @@
         <img src="images/whatsapp.png"  alt="Whatsapp Api" style="width: 3rem; height: 3rem;background-color: white; margin-top: 2rem;"></a>
         <h4 class="h4">BOOK NOW</h4>
     </div>
+  <nav class="togglex">
+    <!-- Other navigation elements -->
+    <button id="toggleButton"><i class="fa-solid fa-bars"></i></button>
+    <ul class="Header_btn">
+        <!-- Content of Header_btn goes here -->
+    </ul>
+</nav>
+
+    
     </nav>
 </body>
 <footer>
