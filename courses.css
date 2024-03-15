@@ -270,7 +270,7 @@ margin-bottom: 2.5rem;
         margin-left: 11rem;
     }
     .logo{
-        margin-left: 10rem;
+        margin-left: 8rem;
     }
    
    
@@ -299,3 +299,40 @@ span{
     font-size: 2rem;
 }
    }
+
+   
+.togglex {
+    display: none; 
+}
+
+@media (max-width: 768px) {
+    .togglex {
+        display: block; 
+        background: none;
+        border: none;
+        margin-top: 3rem;
+        max-width: max-content;
+     
+    }
+    #toggleButton {
+        display: block; 
+        background: none;
+        border: none;
+     
+    }
+
+    .Header_btn {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 5rem; /* Adjust as needed */
+        right: 0;
+        background-color: white; /* Adjust background color as needed */
+        padding: 1rem;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75); /* Add box shadow for better visibility */
+    }
+
+    .show {
+        display: flex;
+    }
+}

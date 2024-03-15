@@ -10,6 +10,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Retreats - Swar Yog Peeth</title>
 </head>
+<script>document.addEventListener("DOMContentLoaded", function() {
+    const toggleButton = document.getElementById("toggleButton");
+    const headerRight = document.querySelector(".Header_btn");
+
+    toggleButton.addEventListener("click", function() {
+        headerRight.classList.toggle("show");
+    });
+});
+</script>
 <body>
 <nav>
     <div class="logo"> <img src="images/LOGO.png" alt="LOGO" style="height: 6.5rem;"></div>
@@ -33,6 +42,12 @@
         </a>
         <h4 class="h4">BOOK NOW</h4>
     </div>
+    <nav class="togglex">
+   
+        <button id="toggleButton"><i class="fa-solid fa-bars"></i></button>
+        <ul class="Header_btn">
+        </ul>
+    </nav>
 </nav>
 
 <div class="main">
