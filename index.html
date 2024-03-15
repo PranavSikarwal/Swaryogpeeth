@@ -8,65 +8,68 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="index.css">
 </head>
+<script>document.addEventListener("DOMContentLoaded", function() {
+    const toggleButton = document.getElementById("toggleButton");
+    const headerRight = document.querySelector(".Header_btn");
+
+    toggleButton.addEventListener("click", function() {
+        headerRight.classList.toggle("show");
+    });
+});
+</script>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="images/LOGO.png" alt="LOGO" style="height: 6.5rem;">
-            </div>
+    <nav>
+        <div class="logo"> <a href="/"><img src="images/LOGO.png" alt="LOGO" style="height: 6.5rem;"></a></div>
+        <ul class="Header_btn">
+            <li>HOME</a></li>
+            <li>
+                <select>
+                    <option>ABOUT</option>
+                    <option>About Us</option>
+                    <option>Gallery</option>
+                </select>
+            </li>
+            <li>TEACHER TRAINING</a></li>
+            <li>RETREATS</a></li>
+            <li>BLOGS</a></li>
+            <li>CONTACT US</a></li>
+        </ul>
+        <div class="header_right">
+            <a href="https://api.whatsapp.com/send?phone=919105819642">
+                <img src="images/whatsapp.png" alt="Whatsapp Api" style="width: 3rem; height: 3rem;background-color: white; margin-top: 2rem;">
+            </a>
+            <h4 class="h4">BOOK NOW</h4>
+        </div>
+        <nav class="togglex">
+       
+            <button id="toggleButton"><i class="fa-solid fa-bars"></i></button>
             <ul class="Header_btn">
-                <li style="color:#138568;">HOME</li>
-                <li>
-                    <select>
-                        <option>ABOUT</option>
-                        <option>About Us</option>
-                        <option>Gallery</option>
-                    </select>
-                </li>
-                <li>TEACHER TRAINING</li>
-                <li>RETREATS</li>
-                <li>BLOGS</li>
-                <li>CONTACT US</li>
             </ul>
-            <div class="header_right">
-                <a href="https://api.whatsapp.com/send?phone=919105819642">
-                    <img src="images/whatsapp.png"  alt="Whatsapp Api" style="width: 3rem; height: 3rem;background-color: white; margin-top: 2rem;">
-                </a>
-                <h4 class="h4">BOOK NOW</h4>
-            </div>
-            <nav class="togglex">
-                <button id="toggleButton"><i class="fa-solid fa-bars"></i></button>
-                <ul class="Header_btn"></ul>
-            </nav>
         </nav>
-    </header>
+    </nav>
 
-    <main>
-        <section>
-            <h1>Welcome to Swar Yog Peeth</h1>
-            <p>Discover the art of yoga and enhance your well-being with us.</p>
-        </section>
-        
-    </main>
-
-    <footer>
+    
+    </nav>
+    <footer class="footer">
         <div class="footer_up">
-            <div class="foot1">
-                <img src="images/foot1.png" alt="img1">
-                <h1 class="foot_btn"><a href="/courses.html">CHECK OUR COURSES</a></h1>
-            </div>
+            <div class="foot1"><img src="images/foot1.png" alt="img1">
+         <H1 class="foot_btn">
+            <a href="/courses.html">
+            CHECK OUR COURSES</H1></a></div>
             <div class="foot2">
                 <div class="foot2_up" style="display: flex;flex-direction: column;">
                     <img src="images/footer-logo.png" alt="" height="150rem" width="170rem" style="margin-left: 1rem;">
+    
                 </div>
                 <div class="foot2_data">
-                    <h3>SWAR YOG PEETH</h3>
-                    <h4>A YOGA CAPITAL SCHOOL</h4>
-                    <h4>Yoga Village Road <br>
-                        Ram Jhula, Rishikesh <br>
-                        India, 249201 <br>
-                        +91 91 05 81 YOGA <br>
-                        swaryogpeeth@gmail.com</h4>
+                   <H3>SWAR YOG PEETH</H3><br>
+                   <h4>A YOGA CAPITAL SCHOOL</h4><br>
+                   <h4>Yoga Village Road <br>
+                    Ram Jhula, Rishikesh <br>
+                    India, 249201 <br>
+                    +91 91 05 81 YOGA <br>
+                    swaryogpeeth@gmail.com</h4>
+
                     <div class="contact_logo">
                         <img src="images/instagram.png" alt="" class="foot_logo">
                         <img src="images/whatsapp.jpeg" alt="" class="foot_logo">
@@ -74,10 +77,12 @@
                     </div>
                 </div>
             </div>
-            <div class="foot3">
-                <img src="images/foot2.png" alt="img2">
-                <h1 class="foot_btn">READ OUR ARTICLES</h1>
+
+            <div class="foot3"><img src="images/foot2.png" alt="img2" >
+                <H1 class="foot_btn">READ OUR ARTICLES</H1>
             </div>
+    
+         
         </div>
         <div class="footer_low"> 
             <div class="footer_left">Copyright © 2012 - 2024 Swar Yog Peeth | All Rights Reserved</div>
@@ -86,19 +91,11 @@
                 Payments Policy | 
                 Terms & Conditions | 
                 F.A.Q. | 
-                Sitemap
-            </div>
+
+                Sitemap</div>
+    
         </div>
     </footer>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const toggleButton = document.getElementById("toggleButton");
-            const headerRight = document.querySelector(".Header_btn");
-
-            toggleButton.addEventListener("click", function() {
-                headerRight.classList.toggle("show");
-            });
-        });
-    </script>
 </body>
-</html>
+
+</html>           
