@@ -99,6 +99,7 @@ select{
     align-items: center;
     margin-top: 15rem;
     background-color: #3a8f7f;
+    gap: 10rem;
 }
 .foot2_data{
     text-align: center;
