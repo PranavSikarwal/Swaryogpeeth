@@ -343,12 +343,6 @@ a{
 }
 
 @media (max-width: 1290px) {
-    .right{
-        display: none;
-    }
-    .top_2{
-        display: none;
-    }
     .foot1{
         display: none;
     
