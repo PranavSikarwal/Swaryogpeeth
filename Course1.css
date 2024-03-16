@@ -87,29 +87,67 @@ select{
      margin-top: 1.2rem;
 }
 .top{
-    background: url("/images/yogatop.jpeg");
     height: max-content;
-    background-size: cover;
-    height: 59rem;
-    background-repeat: no-repeat;
-    background-position: center;
     width: 100%;
+   
 }
 .top {
+    padding: 2rem;
     display: flex;
-    justify-content: center; /* Horizontally center */
     align-items: center; /* Vertically center */
-    
+    flex-direction: column;
+    margin-bottom: 15rem;
 }
+.top_imgs{
+    display: flex;
+    flex-direction: row;
+    margin-top: 6rem;
 
+}
+.img1, .img3{
+    object-fit: cover;
+    width: 28.2rem;
+    height: 37rem;
+    margin-right: 1.5rem;
+    margin-top: 1rem;
+}
+.img2, .img4{
+    object-fit: cover;
+    width: 28.2rem;
+    height: 42rem;
+    margin-right: 2.5rem;
+}
 .top h1 {
     text-align: center;
-    font-family:'Times New Roman', Times, serif;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 4rem; /* Adjust font size as needed */
     color: #fff; /* Adjust color as needed */
-    margin: 0; /* Remove default margin */
+    margin-top: 3rem; /* Remove default margin */
+    color:#02bf9b;
     
 }
+.top h2{
+    font-size: 3rem;
+    color: gray;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+.top h3{
+    font-size: 2rem;
+    background-color: #02bf9b;
+    color: white;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    border-radius: 1rem;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    margin-top: 1rem;
+}
+.top h3:hover{
+    background-color: #074035;
+    cursor: pointer;
+}
+
 .top_2{
     flex-wrap: wrap;
     width: 80%;
@@ -132,11 +170,15 @@ select{
     align-items: center;
     justify-content: center;
 }
+.reserve1:hover{
+    background-color: #074035;
+    cursor: pointer;
+}
 .reserve1 {
     font-size: 1.7rem;
     padding: 1rem 3rem; /* Combined padding shorthand */
     margin: auto;
-    background-color: rgb(13, 56, 56);
+    background-color: rgb(10, 160, 118);
     color: white;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Add shadow */
     margin-right: 2rem;
@@ -213,7 +255,7 @@ tr:nth-child(even) {
 
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:1220px) {
     
    .top_2, .right{
       display: none;
@@ -222,6 +264,10 @@ tr:nth-child(even) {
         color: rgb(31, 125, 125);
         font-size: 3rem;
         
+    }
+    
+    .top_imgs{
+        display: none;
     }
     .top{
         /* background: none; */
@@ -286,7 +332,7 @@ tr:nth-child(even) {
 /* Optional: Hover effect for buttons */
 .send-application-btn:hover,
 .pay-now-btn:hover {
-  background-color: #45A049; /* Slightly darker green on hover */
+  background-color: #074035; /* Slightly darker green on hover */
 }
 
 /* Style the course description section */
@@ -389,7 +435,7 @@ a{
         }
         .logo{
             /* margin: 0; */
-            margin-left: 30rem;
+            /* margin-left: 30rem; */
         }
         .footer_left{
             margin: 0;
