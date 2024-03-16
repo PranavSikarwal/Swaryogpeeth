@@ -1,0 +1,273 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: background-color 0.5s, color 0.2s;
+
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  ul{
+    list-style-type: none;
+  }
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Adjust as needed */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1.5rem;
+    font-size: 1.7rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-bottom: 0.1rem solid rgb(203, 193, 193);
+    /* width: 100%; */
+    background-color: white;
+}
+
+
+option{
+    cursor: pointer;
+    border: 2rem solid white;
+    font-size: large;
+
+}
+.Header_btn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3.4rem;
+    cursor: pointer;
+}
+.logo{
+    margin-right: 5rem;
+    cursor: pointer;
+}
+.header_right{
+    text-align: center;
+    margin-left: 8rem;
+    display: flex;
+
+}
+li {
+    position: relative;
+    color: rgb(68, 63, 63);
+}
+
+li::after {
+    content: '';
+    position: absolute;
+    bottom: -29px; /* Adjust this value to move the border lower */
+    left: 0;
+    width: 0;
+    height: 0.2rem;
+    background-color: #138568;
+    transition: width 0.2s ease-in-out;
+}
+
+li:hover::after {
+    width: 100%; /* Expand width to 100% on hover */
+}
+select{
+    border: none;
+    color: rgb(81, 76, 76);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.6rem;
+}
+.h4{
+    color: #497b62; 
+    margin-left: 2rem; 
+    border: 0.2rem solid #559383;
+     padding: 1rem;
+     margin-bottom: 2rem;
+     margin-top: 1.2rem;
+}
+.top{
+    background: url("/images/yogatop.jpeg");
+    height: 59rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+}
+.top {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+}
+
+.top h1 {
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 4rem; /* Adjust font size as needed */
+    color: #000; /* Adjust color as needed */
+    margin: 0; /* Remove default margin */
+}
+.top_2{
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    justify-content: center;
+    margin-top: 4rem;
+    font-size: 2rem;
+    box-shadow: 40px 2px 40px rgba(0, 0, 0, 0.5); /* Add shadow */
+    /* max-width: max-content; */
+    margin-bottom: 2rem;
+}
+.reserve1 {
+    font-size: 2rem;
+    padding: 1rem 3rem; /* Combined padding shorthand */
+    margin-top: 2rem;
+    background-color: rgb(13, 56, 56);
+    color: white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Add shadow */
+    margin-right: 2rem;
+    margin-left: 15rem;
+}
+.top_main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+
+}
+.detail{
+    display: flex;
+    flex-direction: column;
+    border: 0.1rem solid gray;
+    margin-right: 2rem;
+    padding: 2rem;
+    font-size: large;
+}
+@media (max-width: 1290px) {
+    
+    .foot1{
+        display: none;
+    
+    }
+        .foot3{
+            display: none;
+        }
+        .Header_btn{
+            display: none;
+        }
+        .header_right{
+            display: none;
+        }
+        .course{
+            margin-left: 20rem;
+        }
+        .foot2{
+            margin: 0;
+        }
+        .footer_low{
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+            height: 15rem;
+        }
+        .logo{
+            /* margin: 0; */
+            margin-left: 30rem;
+        }
+        .footer_left{
+            margin: 0;
+            text-align: center;
+            padding: 1rem;
+        }
+        .footer_right{
+            margin: 0;
+            padding: 1rem;
+            font-size: 2rem;
+            text-align: center;
+    
+        }
+    
+      
+    }
+    @media (max-width:1000px) {
+        .foot2{
+        }
+        .logo{
+            margin-left: 8rem;
+        }
+        li::after{
+            bottom: -1rem;
+        }
+       
+       
+        .course{
+            flex-direction: column;
+        }
+        .course_details{
+            text-align: center;
+        }
+      
+        .course{
+            /* height: 44rem; */
+            margin-left: 18rem;
+            margin-right: 0.1rem;
+            
+        }
+       .rate{
+        margin-left: 12rem;
+        margin-bottom: 0;
+       }
+       .price{
+        display: flex;
+        flex-direction: row;
+       }
+    span{
+        font-size: 2rem;
+    }
+       }
+       
+    
+       
+    .togglex {
+        display: none; 
+    }
+    
+    @media (max-width: 768px) {
+        .course{
+            margin-left: 0.1rem;
+        }
+        .togglex {
+            display: block; 
+            background: none;
+            border: none;
+            margin-top: 3rem;
+            max-width: max-content;
+            margin-right: 4rem;
+         
+        }
+        #toggleButton {
+            display: block; 
+            background: none;
+            border: none;
+         
+        }
+    
+        .Header_btn {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 5rem; /* Adjust as needed */
+            right: 0;
+            background-color: white; /* Adjust background color as needed */
+            padding: 1rem;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75); /* Add box shadow for better visibility */
+        }
+    
+        .show {
+            display: flex;
+        }
+    }
