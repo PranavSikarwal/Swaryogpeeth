@@ -110,12 +110,15 @@ select{
     height: 37rem;
     margin-right: 1.5rem;
     margin-top: 1rem;
+    border-radius: 1rem;
+
 }
 .img2, .img4{
     object-fit: cover;
     width: 28.2rem;
     height: 42rem;
     margin-right: 2.5rem;
+    border-radius: 1rem;
 }
 .top h1 {
     text-align: center;
