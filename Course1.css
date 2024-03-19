@@ -87,8 +87,8 @@ select{
      margin-top: 1.2rem;
 }
 .top{
-    height: max-content;
-    width: 100%;
+    /* height: max-content; */
+    /* width: 100%; */
    
 }
 .top {
@@ -124,7 +124,6 @@ select{
     text-align: center;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 4rem; /* Adjust font size as needed */
-    color: #fff; /* Adjust color as needed */
     margin-top: 3rem; /* Remove default margin */
     color:#02bf9b;
     
@@ -210,7 +209,7 @@ select{
 .detail{
     box-shadow: 0px 4px 12px 0px #00000070;;
     margin: 2rem;
-    width: 90%;;
+    width: 90%;
     display: flex;
     flex-direction: column;
     margin-right: 2rem;
