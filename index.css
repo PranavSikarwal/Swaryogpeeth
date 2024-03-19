@@ -324,7 +324,12 @@ pre{
 }
 @media (max-width: 768px){
     .home_1 h1{
-        font-size: 7rem;
+        font-size: 4rem;
+        line-height: 8rem;
+        text-align: center;
+    }
+    .home_1 h2{
+        text-align: center;
     }
     .home_card{
         flex-direction: column;
@@ -332,5 +337,8 @@ pre{
     }
     .card{
         margin-bottom: 2rem;
+    }
+    .home_1 button{
+        margin-left: 4rem;
     }
 }
