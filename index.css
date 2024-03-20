@@ -604,6 +604,8 @@ th{
     }
     .food_images{
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
   
 }
@@ -707,6 +709,9 @@ th{
     }
     .img4, .img5{
         display: block;
+    }
+    .food_images img{
+        width: 35rem;
     }
    
     
