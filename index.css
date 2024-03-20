@@ -404,7 +404,7 @@ pre{
 .main_bottom{
     margin-top: 5rem;
 }
-.main_bottom button{
+.main_bottom button, .btn{
     box-sizing: border-box;
     color: #de4b0b;
     background-color: #ffffff;
@@ -418,7 +418,8 @@ pre{
     font-size: 1.6rem;
     margin-right: 2rem;
 }
-.main_bottom button:hover{
+.main_bottom button:hover,
+.btn:hover{
     background-color: #de4b0b;
     color:#ffffff;
     cursor: pointer;
@@ -440,6 +441,35 @@ pre{
     padding: 1.5rem;
     border-radius: 50%;
 }
+.home_2_images{
+    display: flex;
+    flex-direction: row;
+}
+.home_2_images img{
+    width: 69.3rem;
+    height: 43.3rem;
+    margin: 2rem;
+    border-radius: 0.8rem;
+    max-width: 100%;
+
+}
+.home_3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    /* Center items horizontally */
+    text-align: center;
+     /* Center text inside */
+    margin: 4rem; /* Center the section horizontally */
+    /* max-width: 800px; */
+     /* Optionally set a maximum width for the section */
+}
+.home_3 h1 {
+    width: 100%; /* Make the width of the <h1> element 100% */
+    margin: 0; /* Remove default margins */
+    text-align: left; /* Align the text to the left */
+}
+
 
 @media (max-width:1400px) {
     .card4{
@@ -455,6 +485,9 @@ pre{
     .home_1 button{
         margin-top: 2rem;
         margin-bottom: 8rem;
+    }
+    .home_2_images{
+        flex-direction: column;
     }
 }
 @media (max-width:1000px) {
@@ -506,6 +539,16 @@ pre{
     }
     .main_bottom{
         text-align: center;
+        margin-left: 3rem;
+    }
+    .home_2_images img{
+        margin: 2rem 0 2rem 0;
+    }
+    .home_3 button{
+        font-size: 1.3rem;
+    }
+    .home_3{
+        margin: 1rem;
     }
 }
    
