@@ -221,23 +221,19 @@ a{
 
 }
 /* head */
-.home_1{
+.home_1 {
     background: url('images/yoga_home.jpg');
-    width: 100vw;
-    margin: 0;
     background-repeat: no-repeat;
-    background-size:cover ;
-    /* width:100%; */
-    height: 73.6rem;
-    position: relative;
-    padding-top: 5.0rem;
-    padding-bottom: 25.5rem;
-    padding-left: 7.5rem;
-    padding-right: 6.5rem;
-    box-sizing: border-box;
-    display: block;
-    /* border-radius: 3.0rem; */
+    background-size: cover;
+    width: 100%;
+    height: 100vh; /* Set the height of the section to cover the viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center the content */
+    align-items: center; /* Horizontally center the content */
+    text-align: center; /* Center text inside */
 }
+
 
 .home_1 h1{
     font-family: 'Times New Roman', Times, serif;
@@ -271,23 +267,26 @@ a{
 .home_1 button:hover{
     background-color: #de4b0b;
     color:#ffffff;
+    cursor: pointer;
 }
-.home_card{
+.home_card {
     display: flex;
     flex-direction: row;
-
-        position: relative;
-        margin-top: -145px;
-        z-index: 1;
-        overflow: hidden;
-        padding-bottom: 50px
+    justify-content: center; /* Horizontally center the content */
+    margin: 0 auto; /* Center the section horizontally */
+    max-width: 1200px; /* Adjust the maximum width of the section as needed */
+    z-index: 1;
+    margin-top: -145px; /* Adjust margin-top as needed */
+    padding-bottom: 50px; /* Add padding-bottom as needed */
+    
 }
+
 .card{
     height: 30.8rem;
     width: 33.45rem;
     border: 0.1rem solid orange;
     margin-right: 2rem;
-    margin-left: 3rem;
+    margin-left: 2rem;
     background-color: white;
 }
 .card:hover{
@@ -299,6 +298,7 @@ a{
         color: orange;
     }
     border: none;
+    cursor: pointer;
     transition-duration: 2s;
 }
 .card_data{
@@ -322,6 +322,22 @@ pre{
     margin-bottom: 2rem;
     font-size: 1.8rem;
 }
+@media (max-width:1400px) {
+    .card4{
+        display: none;
+    }
+    .card2{
+        display: none;
+    }
+    .home_1 h1{
+        font-size: 5rem;
+        text-align: center;
+    }
+    .home_1 button{
+        margin-top: 2rem;
+        margin-bottom: 8rem;
+    }
+}
 @media (max-width: 768px){
     .home_1 h1{
         font-size: 4rem;
@@ -334,11 +350,27 @@ pre{
     .home_card{
         flex-direction: column;
         margin-top: -50px;
+        align-items: center;
     }
     .card{
-        margin-bottom: 2rem;
+        margin: 2rem;
+        
     }
     .home_1 button{
-        margin-left: 4rem;
+        margin-top: 4rem;
+        margin-bottom: 1rem;
     }
+   
+    @media (max-width: 768px) {
+        .home_1 button {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 2rem; /* Adjust as needed */
+        }
+        .card4, .card2{
+            display: block;
+        }
+    }
+    
 }
