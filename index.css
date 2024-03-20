@@ -97,7 +97,7 @@ select{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 15rem;
+    margin-top: 5rem;
     background-color: #3a8f7f;
     gap: 10rem;
 }
@@ -465,6 +465,10 @@ pre{
     /* max-width: 800px; */
      /* Optionally set a maximum width for the section */
 }
+.home_8{
+    margin: 8rem 8rem 2rem 8rem;
+    justify-content: center;
+}
 .home_3 h1 {
     width: 100%; /* Make the width of the <h1> element 100% */
     margin: 0; /* Remove default margins */
@@ -573,6 +577,69 @@ th{
     border-radius: 0.8rem;
 
 }
+.accordion {
+    /* border: solid 2px #f5f5f5; */
+    transition: all 0.3s ease-in-out;
+    & + & {
+      margin-top: 0.25rem;
+    }
+    &:hover {
+      background-color: #f5f5f5;
+    }
+  }
+  .accordion__title {
+    cursor: pointer;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #000000;
+    background-color: #f3f3f3;
+    border: 0.1rem solid #de4b0b;
+    text-align: left;
+    margin-bottom: 2rem;
+
+  }
+  .accordion__content {
+    padding: 0 1rem 1rem 1rem;
+    p {
+      margin: 0;
+      font-size: 3rem;
+      text-align: left;
+      margin-bottom: 1rem;
+    }
+    p + p {
+      margin-top: 0.5em;
+    }
+  }
+  .accordion__title {
+    list-style-type: none;
+    &::marker,
+    &::-webkit-details-marker {
+      display: none;
+    }
+  }
+
+  .accordion__title {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M23.024 11.263l-7.024 7.023-7.022-7.023-3.091 3.090 8.569 8.569c0.413 0.413 0.961 0.64 1.545 0.64s1.133-0.228 1.545-0.64l8.569-8.569-3.091-3.090z' fill='%23555555'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem top 0.625rem;
+    background-size: 1.5rem;
+    padding: 0.875rem 2.5rem 0.875rem 4rem;
+  }
+
+  .accordion {
+    &[open] {
+        .accordion__title{
+            background-color: #de4b0b;
+            color: #fff;
+        }
+        
+      background-color: #fff;
+      border-color: #ebebeb;
+      .accordion__title {
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M8.976 22.025l7.024-7.023 7.022 7.023 3.091-3.090-8.568-8.568c-0.413-0.412-0.961-0.64-1.545-0.64s-1.133 0.228-1.545 0.64l-8.569 8.569 3.091 3.090z' fill='%23555555'/%3e%3c/svg%3e");
+      }
+    }
+  }
 @media (max-width:1470px) {
     .card4{
         display: none;
@@ -716,7 +783,15 @@ th{
     .food_images img{
         width: 35rem;
     }
-   
+     .accordion__title{
+        font-size: 2rem;
+    }
+    .accordion__content p{
+        font-size: 2rem;
+    }
+    .home_8{
+        margin: 1rem;
+    }
     
 }
    
