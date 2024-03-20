@@ -454,7 +454,7 @@ pre{
     max-width: 100%;
 
 }
-.home_3, .home_4, .home_5, .home_6{
+.home_3, .home_4, .home_5, .home_6,.home_7{
     display: flex;
     flex-direction: column;
     align-items: center; 
@@ -539,11 +539,39 @@ th{
 .home_6 h1{
     font-size: 4rem;
     margin-bottom: 2rem;
+    font-weight: 510;
 }
 .home_6 h2{
     font-size: 2.5rem;
     font-weight: 100;
     text-align: left;
+}
+.yoga_teachers{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.teacher{
+    border: 0.1rem solid gray;
+    text-align: center;
+    margin: 2rem;
+}
+
+.teacher img{
+    height: 26.5rem;
+    width: 23rem;
+}
+.food_images{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.food_images img{
+    width: 45rem;
+    height: 25rem;
+    margin: 2rem;
+    border-radius: 0.8rem;
+
 }
 @media (max-width:1470px) {
     .card4{
@@ -569,7 +597,15 @@ th{
     .yog3{
         display: none;
     }
-    .alliance{width: 40rem;}
+    .alliance{width: 40rem;
+    }
+    .img4, .img5{
+        display: none;
+    }
+    .food_images{
+        flex-direction: column;
+    }
+  
 }
 @media (max-width:1060px) {
     .home_main{
@@ -660,8 +696,17 @@ th{
         margin: 2rem;
     }
     .yog_images img{
-        width: 30rem;
+        width: 35rem;
         /* margin: 4rem; */
+    }
+    .yoga_teachers{
+        flex-direction: column;
+    }
+    .teacher img{
+        width: 100%;
+    }
+    .img4, .img5{
+        display: block;
     }
    
     
