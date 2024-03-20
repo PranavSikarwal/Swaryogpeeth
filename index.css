@@ -453,7 +453,7 @@ pre{
     max-width: 100%;
 
 }
-.home_3 {
+.home_3, .home_4{
     display: flex;
     flex-direction: column;
     align-items: center; 
@@ -469,8 +469,34 @@ pre{
     margin: 0; /* Remove default margins */
     text-align: left; /* Align the text to the left */
 }
-
-
+.hover{
+    display: none;
+}
+.table_data , .danger{
+    border: solid #de4b0b;
+    padding: 4rem 2rem;
+    margin: 0;
+    font-size: 2rem;
+}
+.danger{
+    background-color: pink;
+}
+th{
+    font-size: 2.5rem;
+}
+.table_data:hover{
+    background-color: #de4b0b;
+    .current{
+        display: none;
+    }
+    .hover{
+        display: block;
+    }
+    
+}
+.table{
+    margin-bottom: 2rem;
+}
 @media (max-width:1400px) {
     .card4{
         display: none;
@@ -549,6 +575,16 @@ pre{
     }
     .home_3{
         margin: 1rem;
+    }
+    .table_data , .danger{
+      padding: 0;
+        font-size: 0.86rem;
+    }
+    .danger,.sunday{
+        display: none;
+    }
+    th{
+        font-size: 1rem;
     }
 }
    
