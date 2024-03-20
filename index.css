@@ -701,6 +701,9 @@ th{
         width: 35rem;
         /* margin: 4rem; */
     }
+    .teacher{
+        width: 35rem;
+    }
     .yoga_teachers{
         flex-direction: column;
     }
