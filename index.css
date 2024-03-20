@@ -207,6 +207,10 @@ a{
         border: none;
      
     }
+    .logo{
+        margin-left: 2rem;
+        
+    }
 
     .Header_btn {
         display: none;
@@ -225,7 +229,7 @@ a{
     background: url('images/yoga_home.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
+    max-width: 100%;
     height: 100vh; /* Set the height of the section to cover the viewport */
     display: flex;
     flex-direction: column;
@@ -302,7 +306,7 @@ a{
     transition-duration: 2s;
 }
 .card_data{
-    padding: 3rem;
+    padding: 4rem;
 }
 pre{
     margin-left: 10rem;
@@ -322,6 +326,121 @@ pre{
     margin-bottom: 2rem;
     font-size: 1.8rem;
 }
+.home_top {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    text-align: center; /* Center text inside */
+    /* height: 100vh; Set height to full viewport height */
+}
+
+
+.home_top h2{
+    margin-bottom: 2rem;
+    color: #de4b0b;
+    font-size: 2rem;
+}
+.home_top h1 {
+    margin-bottom: 1.5rem; /* Reset default margin */
+    font-size: 3.5rem;
+    font-family:'Times New Roman', Times, serif;
+    
+}
+.home_top img{
+    margin-bottom: 2rem;
+}
+.home_main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 4rem;
+}
+.big_img{
+    padding-top: 2rem;
+    max-width: 100%;
+}
+.home_main_right{
+    margin-left: 10rem;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 100;
+    color: rgb(57, 53, 53);
+}
+.data_images{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.data_images {
+    display: flex;
+    justify-content: space-around; /* Horizontally distribute items */
+    margin-top: 2rem; /* Adjust margin as needed */
+}
+
+.yoga_style {
+    text-align: center;
+}
+
+.yoga_style img {
+    /* width: 100px; Adjust image width as needed */
+    /* height: auto; Maintain aspect ratio */
+}
+
+.yoga_style h1 {
+    font-size: 1.5rem; /* Adjust font size as needed */
+    margin-top: 1rem; /* Adjust margin as needed */
+}
+
+.yoga_style h2 {
+    font-size: 1.2rem; /* Adjust font size as needed */
+    margin-top: 0.5rem; /* Adjust margin as needed */
+}
+.main_bottom{
+    display: flex;
+    flex-direction: row;
+}
+.main_bottom{
+    margin-top: 5rem;
+}
+.main_bottom button{
+    box-sizing: border-box;
+    color: #de4b0b;
+    background-color: #ffffff;
+    padding: 17px 1.0rem;
+    font-weight: 600;
+    border-radius: .6rem;
+    position: relative;
+    text-transform: capitalize;
+    border: 0.1 rem;
+    border-color: #de4b0b;
+    font-size: 1.6rem;
+    margin-right: 2rem;
+}
+.main_bottom button:hover{
+    background-color: #de4b0b;
+    color:#ffffff;
+    cursor: pointer;
+}
+.whatsapp_{
+    margin-left: 2rem;
+}
+.whatsapp_h1{
+    margin-top: 1rem;
+}
+
+.i2{
+    margin-right:2rem;
+    padding-top:2rem;
+    /* height: 20px; */
+    font-size: 3rem;
+    color: #de4b0b;
+    border: 0.2rem solid #de4b0b;
+    padding: 1.5rem;
+    border-radius: 50%;
+}
+
 @media (max-width:1400px) {
     .card4{
         display: none;
@@ -338,7 +457,19 @@ pre{
         margin-bottom: 8rem;
     }
 }
+@media (max-width:1000px) {
+    .home_main{
+        flex-direction: column;
+        text-align: center;
+    }
+}
 @media (max-width: 768px){
+    .home_top{
+        height: auto;
+    }
+    .whatsapp_h1{
+        display: none;
+    }
     .home_1 h1{
         font-size: 4rem;
         line-height: 8rem;
@@ -360,6 +491,25 @@ pre{
         margin-top: 4rem;
         margin-bottom: 1rem;
     }
+    .home_main {
+        flex-direction: column; /* Change flex-direction to column */
+        align-items: center; /* Center items horizontally */
+        text-align: center; /* Center text inside */
+    }
+    .home_main_right {
+        margin-left: 0; /* Remove left margin */
+    }
+
+    .i2{
+        border: none;
+        font-size: 4rem;
+    }
+    .main_bottom{
+        text-align: center;
+    }
+}
+   
+    
    
     @media (max-width: 768px) {
         .home_1 button {
@@ -373,4 +523,3 @@ pre{
         }
     }
     
-}
