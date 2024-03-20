@@ -349,7 +349,7 @@ pre{
     
 }
 .home_top img{
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
 }
 .home_main{
     display: flex;
@@ -454,7 +454,7 @@ pre{
     max-width: 100%;
 
 }
-.home_3, .home_4{
+.home_3, .home_4, .home_5, .home_6{
     display: flex;
     flex-direction: column;
     align-items: center; 
@@ -484,6 +484,9 @@ pre{
 }
 th{
     font-size: 2.5rem;
+    color: white;
+    border: 0;
+    margin: 0;
 }
 .table_data:hover{
     background-color: #de4b0b;
@@ -497,6 +500,50 @@ th{
 }
 .table{
     margin-bottom: 2rem;
+}
+.yoga_types{
+    display: flex;
+    flex-direction: row;
+}
+.yoga_type{
+    border: 0.1rem solid black;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: left;
+    line-height: 2.5rem;
+}
+.yoga_type:hover{
+    background-color: #de4b0b;
+    h2{
+        color: white;
+    }
+}
+.yoga_type h2{
+    color: rgb(62, 59, 59);
+}
+.yog_images{
+    display: flex;
+    flex-direction: row;
+}
+.yog_images img{
+    border-radius: 0.8rem;
+    margin: 2rem;
+    width: 45rem;
+    height: 42rem;
+}
+.alliance{
+    height: 11rem;
+    width: 141rem;
+    margin: 2rem;
+}
+.home_6 h1{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+.home_6 h2{
+    font-size: 2.5rem;
+    font-weight: 100;
+    text-align: left;
 }
 @media (max-width:1470px) {
     .card4{
@@ -519,8 +566,12 @@ th{
     .danger,.sunday{
         display: none;
     }
+    .yog3{
+        display: none;
+    }
+    .alliance{width: 40rem;}
 }
-@media (max-width:1000px) {
+@media (max-width:1060px) {
     .home_main{
         flex-direction: column;
         text-align: center;
@@ -529,6 +580,13 @@ th{
         padding: 0;
           font-size: 1rem;
       }
+      .yog_images{
+        flex-direction: column;
+      }
+      .yog3{
+        display: block;
+    }
+
 }
 @media (max-width: 768px){
     .home_top{
@@ -594,6 +652,19 @@ th{
     th{
         font-size: 1rem;
     }
+    .yoga_types{
+        flex-direction: column;
+    }
+    .alliance{
+        width: 35rem;
+        margin: 2rem;
+    }
+    .yog_images img{
+        width: 30rem;
+        /* margin: 4rem; */
+    }
+   
+    
 }
    
     
