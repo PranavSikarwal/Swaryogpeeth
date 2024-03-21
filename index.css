@@ -5,7 +5,9 @@
     transition: background-color 0.5s, color 0.2s;
 
   }
-  
+  a{
+    text-decoration: none;
+  }
   html {
     font-size: 62.5%;
   }
@@ -15,7 +17,7 @@
   nav {
     position: sticky;
     top: 0;
-    z-index: 1000; /* Adjust as needed */
+    z-index: 10; /* Adjust as needed */
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -143,11 +145,11 @@ select{
     text-decoration: none;
     color: white;
 }
-/* Default styles for .togglex */
 .togglex {
-    display: none; /* Hide the togglex by default */
-    justify-content: center; /* Center the togglex horizontally */
-    text-align: center; /* Center the content inside the togglex */
+    z-index: 999;
+    display: none; 
+    /* justify-content: center; */
+    /* text-align: center; */
 }
 
 
@@ -155,8 +157,7 @@ select{
 @media (max-width: 768px) {
     /* CSS rules to apply when screen width is 768px or less */
     .togglex {
-        display: block; /* Make the togglex visible */
-       justify-content: center;
+      
     }
 }
     /* Centering the .nav_phone element */
@@ -213,8 +214,8 @@ select{
         border: none;
         margin-top: 3rem;
         max-width: max-content;
-        margin-right: 4rem;
-     
+        margin-left: 3rem;
+     background-color: #ffffff;
     }
 
     #toggleButton {
@@ -224,10 +225,16 @@ select{
      
     }
     .togglex h1{
-        justify-content: center;
+        /* justify-content: center; */
+        /* margin-left: 8rem; */
+        width: 35rem;
+        /* padding-right: 25rem; */
+        margin-bottom: 1rem;
+        color: rgb(61, 55, 55);
+        font-weight: 400;
         }
     .logo{
-        margin-left: 2rem;
+        margin-left: 6rem;
         
     }
 
@@ -930,7 +937,16 @@ th{
     .course_data{
         margin-left: 4rem;
     }
-
+    .div_nav{
+        display: flex;
+        flex-direction: row;
+    }
+    nav {
+        width:0;
+        margin: 0;
+        align-items: center;
+        justify-content: left;
+    }
     
 }
    
