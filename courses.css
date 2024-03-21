@@ -348,9 +348,13 @@ span{
     }
 
 }
-.div_nav{
+.div_nav {
+    position: sticky;
+    top: 0; /* Add this line to specify where the element should stick */
     display: flex;
     flex-direction: row;
+    background-color: white;
+    z-index: 999;
 }
 @media (max-width: 768px) {
     .course{

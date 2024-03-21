@@ -730,7 +730,14 @@ th{
     height: 33.8rem;
     margin-left: 4rem;
 }
-
+.div_nav {
+    position: sticky;
+    top: 0; /* Add this line to specify where the element should stick */
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    z-index: 999;
+}
 
 
 @media (max-width:1470px) {
@@ -932,10 +939,7 @@ th{
     .course_data{
         margin-left: 4rem;
     }
-    .div_nav{
-        display: flex;
-        flex-direction: row;
-    }
+    
     nav {
         width:0;
         margin: 0;
