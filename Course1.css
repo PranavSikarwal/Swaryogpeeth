@@ -17,7 +17,7 @@ ul{
 nav {
     position: sticky;
     top: 0;
-    z-index: 1000; /* Adjust as needed */
+    z-index: 10; /* Adjust as needed */
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -25,9 +25,10 @@ nav {
     font-size: 1.7rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     border-bottom: 0.1rem solid rgb(203, 193, 193);
-    /* width: 100%; */
+    width: 100vw;
     background-color: white;
 }
+
 
 
 option{
@@ -496,24 +497,58 @@ a{
     .togglex {
         display: none; 
     }
-    
+    .togglex {
+        z-index: 999;
+        display: none; 
+        /* justify-content: center; */
+        /* text-align: center; */
+    }
+    .div_nav{
+        display: flex;
+        flex-direction: row;
+    }
     @media (max-width: 768px) {
-      
         .togglex {
             display: block; 
             background: none;
             border: none;
-            margin-top: 3rem;
+            margin-top: 2rem;
             max-width: max-content;
-            margin-right: 4rem;
-         
+            margin-left: 2rem;
+         background-color: #ffffff;
         }
+        .toggleButton{
+            font-size: 3rem;
+        }
+    
         #toggleButton {
             display: block; 
             background: none;
             border: none;
          
         }
+        .togglex h1{
+            /* justify-content: center; */
+            /* margin-left: 8rem; */
+            width: 35rem;
+            /* padding-right: 25rem; */
+            margin-bottom: 1rem;
+            color: rgb(61, 55, 55);
+            font-weight: 400;
+            }
+
+        .logo{
+            margin-left: 10rem;
+        }
+        nav {
+            width:0;
+            margin: 0;
+            align-items: center;
+            justify-content: left;
+        }
+    }    
+    @media (max-width: 768px) {
+      
     
         .Header_btn {
             display: none;

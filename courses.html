@@ -10,47 +10,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Retreats - Swar Yog Peeth</title>
 </head>
-<script>document.addEventListener("DOMContentLoaded", function() {
-    const toggleButton = document.getElementById("toggleButton");
-    const headerRight = document.querySelector(".Header_btn");
-
-    toggleButton.addEventListener("click", function() {
-        headerRight.classList.toggle("show");
-    });
-});
-</script>
-<body>
-<nav>
-    <div class="logo"> <a href="/"><img src="images/LOGO.png" alt="LOGO" style="height: 6.5rem;"></a></div>
-    <ul class="Header_btn">
-        <li>HOME</a></li>
-        <li>
-            <select>
-                <option>ABOUT</option>
-                <option>About Us</option>
-                <option>Gallery</option>
-            </select>
-        </li>
-        <li>TEACHER TRAINING</a></li>
-        <li>RETREATS</a></li>
-        <li>BLOGS</a></li>
-        <li>CONTACT US</a></li>
-    </ul>
-    <div class="header_right">
-        <a href="https://api.whatsapp.com/send?phone=919105819642">
-            <img src="images/whatsapp.png" alt="Whatsapp Api" style="width: 3rem; height: 3rem;background-color: white; margin-top: 2rem;">
-        </a>
-        <h4 class="h4">BOOK NOW</h4>
-    </div>
-    <nav class="togglex">
-   
-        <button id="toggleButton"><i class="fa-solid fa-bars"></i></button>
+<div class="div_nav">
+    <nav>
+        <div class="logo"> <a href="/"><img src="images/LOGO.png" alt="LOGO" style="height: 6.5rem;"></a></div>
         <ul class="Header_btn">
+            <li>HOME</a></li>
+            <li>
+                <select>
+                    <option>ABOUT</option>
+                    <option>About Us</option>
+                    <option>Gallery</option>
+                </select>
+            </li>
+            <li>TEACHER TRAINING</a></li>
+            <li>RETREATS</a></li>
+            <li>BLOGS</a></li>
+            <li>CONTACT US</a></li>
         </ul>
+        <div class="header_right">
+            <a href="https://api.whatsapp.com/send?phone=919105819642">
+                <img src="images/whatsapp.png" alt="Whatsapp Api" style="width: 3rem; height: 3rem;background-color: white; margin-top: 2rem;">
+            </a>
+            <h4 class="h4">BOOK NOW</h4>
+        </div>
+        
     </nav>
-</nav>
-
-<div class="main">
+    <details class="togglex">
+        <summary class="toggleButton"><i class="fa-solid fa-bars"></i></summary>
+        <div class="toggle_data">
+          <a href="/index.html">  <h1 style="margin-top: 0.4rem;">HOME</h1></a>
+            
+               <a href="#"> <h1>ABOUT US</h1></a>
+            
+        <a href="Course1.html"> <h1> TEACHER TRAINING</h1></a>
+          <a href="courses.css"><h1 style="color: cadetblue"> RETREATS</h1></a>
+          <a href=""> <h1> BLOGS</h1></a>
+           <a href=""><h1> CONTACT US</h1></a>
+        
+        </div>
+      </details>
+    </div>
+    <div class="main">
     <div class="left">
         <h1 style="color: rgb(9, 78, 78);">
             Not sure which course to choose? Just  <br>
