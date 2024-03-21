@@ -143,9 +143,24 @@ a{
     text-decoration: none;
     color: white;
 }
+/* Default styles for .togglex */
 .togglex {
-    display: none; 
+    display: none; /* Hide the togglex by default */
+    justify-content: center; /* Center the togglex horizontally */
+    text-align: center; /* Center the content inside the togglex */
 }
+
+
+/* Media query for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+    /* CSS rules to apply when screen width is 768px or less */
+    .togglex {
+        display: block; /* Make the togglex visible */
+       justify-content: center;
+    }
+}
+    /* Centering the .nav_phone element */
+
 
 @media (max-width: 1290px) {
     
@@ -201,12 +216,16 @@ a{
         margin-right: 4rem;
      
     }
+
     #toggleButton {
         display: block; 
         background: none;
         border: none;
      
     }
+    .togglex h1{
+        justify-content: center;
+        }
     .logo{
         margin-left: 2rem;
         
@@ -640,6 +659,78 @@ th{
       }
     }
   }
+.courses_home{
+    display: flex;
+    flex-direction: column;
+    /* margin: 8rem; */
+    justify-content: center;
+    align-items: center;
+}
+.course_home{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.course_img{
+    margin-right: 4rem;
+}
+.course_data h3{
+    padding: 1rem 2rem 1rem 0.5rem;
+    border: 0.1rem solid #de4b0b;
+    border-radius: 4rem;
+    max-width: max-content;
+    margin-top: 2rem;
+    font-weight: 300;
+    font-size: 2rem;
+}
+.course_data h1{
+    font-size: 4rem;
+    color: #de4b0b;
+}
+.course_data h3:hover{
+    color: white;
+    background-color: #de4b0b;
+}
+.course_data h2{
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+.course_data_low{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+.course_data_low h1{
+   font-size: 2rem;
+   margin-bottom: 0.5rem;
+   margin-top: 1rem;
+   justify-content: center;
+}
+.shared_room{
+    margin-right: 5rem;
+}
+.course_data_low button{
+    margin-top: 2rem;
+    padding: 1rem;
+}
+.shared_room h1{
+    font-size: 2rem;
+}
+.course_data i{
+    background-color: #de4b0b;
+    color: white;
+    border-radius: 4rem;
+}
+.course_img img{
+    width: 45.3rem;
+    height: 33.8rem;
+    margin-left: 4rem;
+}
+
+
+
 @media (max-width:1470px) {
     .card4{
         display: none;
@@ -676,6 +767,7 @@ th{
     }
   
 }
+
 @media (max-width:1060px) {
     .home_main{
         flex-direction: column;
@@ -762,7 +854,7 @@ th{
     }
     .alliance{
         width: 35rem;
-        margin: 2rem;
+        margin: 0;
     }
     .yog_images img{
         width: 35rem;
@@ -792,6 +884,50 @@ th{
     .home_8{
         margin: 1rem;
     }
+    .course_home{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-right: 5rem;
+    }
+    .courses_home h1{
+        text-align: center;
+    }
+   
+   .course_data h3{
+    padding: 1rem;
+    margin-left: 1rem;
+    justify-content: center;
+    
+    font-size: 3rem;
+    text-align: center;
+    /* width: 100%; */
+   }
+    .courses_home {
+        
+        margin: 1rem;
+        display: flex;
+        /* justify-content: center; Align items horizontally to the center */
+        /* align-items: center; Align items vertically to the center */
+    }
+    
+    .courses_home button{
+        display: none;
+    }
+    .course_home{
+        justify-content: center;
+    }
+    .course_img img{
+        width: 35rem;
+    }
+    .course_data_low{
+        justify-content: center;
+        margin-left: 2rem;
+    }
+    .course_data{
+        margin-left: 4rem;
+    }
+
     
 }
    
