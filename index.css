@@ -915,7 +915,10 @@ th{
         display: none;
     }
     .course_home{
-        justify-content: center;
+        justify-content: left;
+    }
+    .course_img{
+        margin-left: 2rem;
     }
     .course_img img{
         width: 35rem;
