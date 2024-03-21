@@ -511,6 +511,9 @@ a{
         background-color: white;
         z-index: 999;
     }
+    nav a{
+        color: rgb(68, 63, 63);
+    }
     @media (max-width: 768px) {
         .togglex {
             display: block; 

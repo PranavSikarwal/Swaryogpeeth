@@ -28,7 +28,9 @@
     width: 100vw;
     background-color: white;
 }
-
+nav a{
+    color: rgb(68, 63, 63);
+}
 option{
     cursor: pointer;
     border: 2rem solid white;
@@ -791,6 +793,9 @@ th{
       }
       .yog3{
         display: block;
+    }
+    .course_home{
+        flex-direction: column;
     }
 
 }

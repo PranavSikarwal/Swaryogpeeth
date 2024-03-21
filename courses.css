@@ -26,7 +26,9 @@
     width: 100vw;
     background-color: white;
 }
-
+nav a{
+    color: rgb(68, 63, 63);
+}
 option{
     cursor: pointer;
     border: 2rem solid white;
@@ -144,15 +146,20 @@ a{
     color: white;
 }
 
-.main{
+.main {
     max-width: max-content;
     margin-top: 5rem;
-    margin: auto;
+    margin: auto; /* Center the main container */
     display: flex;
     flex-direction: row;
     position: relative;
-   
+    justify-content: center; /* Center the content horizontally */
 }
+.right_ {
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+}
+
 input{
     border: none;
     border-bottom: 0.1rem solid gray;
@@ -171,18 +178,11 @@ textarea{
 }
 .course {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     border: 0.1rem solid rgb(202, 198, 198);
     margin-left: 2rem;
-    /* padding: 2rem; */
-    height:max-content;
-}
-
-.course {
-    display: flex;
-    flex-direction: row;
+    height: max-content;
     margin-top: 2rem;
-    /* margin-bottom: 1rem; */
 }
 
 
@@ -213,7 +213,10 @@ margin-bottom: 2.5rem;
     /* margin-left: 14rem; */
     right: 0;
 }
-
+.right_{
+    justify-content: center;
+    align-items: center;
+}
 @media (max-width: 1290px) {
     
 .foot1{
