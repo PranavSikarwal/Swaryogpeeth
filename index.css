@@ -212,10 +212,13 @@ select{
         display: block; 
         background: none;
         border: none;
-        margin-top: 3rem;
+        margin-top: 2rem;
         max-width: max-content;
-        margin-left: 3rem;
+        margin-left: 2rem;
      background-color: #ffffff;
+    }
+    .toggleButton{
+        font-size: 3rem;
     }
 
     #toggleButton {
@@ -234,7 +237,7 @@ select{
         font-weight: 400;
         }
     .logo{
-        margin-left: 6rem;
+        margin-left: 10rem;
         
     }
 
